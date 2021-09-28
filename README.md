@@ -14,7 +14,7 @@ Select a location where you would like to clone this repository. The path used i
 ```bash
 $ mkdir -p ~/projects/app/backend
 $ cd ~/projects/app/backend
-$ git clone git@github.com:vmdumitrache/back-end.git . 
+$ git clone git@github.com:vmdumitrache/symfony-api-boilerplate.git . 
 ```
 ### Generate locally signed TLS certificates using `mkcert`
 
