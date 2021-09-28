@@ -1,0 +1,6 @@
+Hi {{ user.firstName }}!
+
+In order to reset your password, please follow the link below:
+{{ reset_password_url|raw }}
+
+This link is valid until: {{ expiresAt|date('r') }}.

@@ -1,0 +1,18 @@
+nelmio_api_doc:
+    documentation:
+        info:
+            title: Site Name
+            description: API Documentation
+            version: 0.0.1
+        components:
+            securitySchemes:
+                Bearer:
+                    type: http
+                    scheme: bearer
+                    bearerFormat: JWT
+    models: { use_jms: false }
+
+    areas: # to filter documented areas
+        default:
+            path_patterns:
+                - ^/api(?!/doc$) # Accepts routes under /api except /api/doc

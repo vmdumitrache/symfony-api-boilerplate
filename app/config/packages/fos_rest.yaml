@@ -1,0 +1,25 @@
+fos_rest:
+  routing_loader: false
+
+  body_listener: true
+  body_converter: true
+
+  format_listener:
+    rules:
+      - { path: '^/verifications', priorities: ['html'], fallback_format: html }
+      - { path: '^/api', priorities: ['json'], fallback_format: json }
+
+  exception:
+    enabled: true
+#    codes:
+#      'Doctrine\DBAL\Types\ConversionException': 404
+#
+#    messages:
+#      'Doctrine\DBAL\Types\ConversionException': false
+
+  param_fetcher_listener: true
+
+  view:
+    view_response_listener: 'force'
+    formats:
+      json: true

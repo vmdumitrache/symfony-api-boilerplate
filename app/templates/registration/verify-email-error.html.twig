@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title|default('Error') }}</title>
+</head>
+
+<body>
+<main>
+    <div class="container">
+        <h1>{{ title|default('An Error Occurred') }}</h1>
+
+        <p>{{ message|default('An error occurred') }}.</p>
+    </div>
+</main>
+</body>
+
+</html>

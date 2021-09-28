@@ -1,0 +1,7 @@
+<h1>Hi {{ user.firstName }}!</h1>
+
+<p>
+    In order to reset your password, please follow the link below: <br><br>
+    <a href="{{ reset_password_url|raw }}">Reset my password</a>.<br><br>
+    This link is valid until: {{ expiresAt|date('r') }}.
+</p>
